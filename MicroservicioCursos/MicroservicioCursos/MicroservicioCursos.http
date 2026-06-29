@@ -1,0 +1,38 @@
+@MicroservicioCursos_HostAddress = http://localhost:5222
+
+GET {{MicroservicioCursos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+@baseUrl = http://localhost:5222
+
+### Listar todos los cursos
+GET {{baseUrl}}/api/cursos
+
+### Registrar un nuevo curso
+POST {{baseUrl}}/api/cursos
+Content-Type: application/json
+
+{
+  "codigo": "CS101",
+  "nombre": "Introducción a la Programación",
+  "creditos": 4,
+  "docente": "María López"
+}
+
+### Consultar un curso por id
+GET {{baseUrl}}/api/cursos/2
+
+### Actualizar el curso con id 1
+PUT {{baseUrl}}/api/cursos/2
+Content-Type: application/json
+
+{
+  "codigo": "CS101",
+  "nombre": "Introducción a la Programación",
+  "creditos": 5,
+  "docente": "María López"
+}
+
+### Eliminar el curso con id 1
+DELETE {{baseUrl}}/api/cursos/2

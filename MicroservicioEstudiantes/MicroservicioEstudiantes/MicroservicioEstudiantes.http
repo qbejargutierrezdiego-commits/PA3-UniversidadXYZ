@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:5274
+
+### Listar todos los estudiantes
+GET {{baseUrl}}/api/estudiantes
+
+### Registrar un nuevo estudiante
+POST {{baseUrl}}/api/estudiantes
+Content-Type: application/json
+
+{
+  "codigo": "EST-0001",
+  "nombres": "Juan Carlos",
+  "apellidos": "Pérez Gómez",
+  "correo": "juan.perez@universidadxyz.edu",
+  "carrera": "Ingeniería de Software"
+}
+
+### Consultar un estudiante por id
+GET {{baseUrl}}/api/estudiantes/1
+### Actualizar el estudiante con id 1
+PUT {{baseUrl}}/api/estudiantes/1
+Content-Type: application/json
+
+{
+  "codigo": "EST-0001",
+  "nombres": "Juan Carlos",
+  "apellidos": "Pérez Gómez",
+  "correo": "juan.perez@universidadxyz.edu",
+  "carrera": "Ingeniería de Sistemas"
+}
+
+### Eliminar el estudiante con id 1
+DELETE {{baseUrl}}/api/estudiantes/1

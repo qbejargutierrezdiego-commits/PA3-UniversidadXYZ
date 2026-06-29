@@ -1,0 +1,11 @@
+# Carpetas de compilacion de .NET
+bin/
+obj/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+.vs/
+
+# Archivos de configuracion local
+appsettings.Development.json
