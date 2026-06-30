@@ -8,7 +8,7 @@ POST {{baseUrl}}/api/estudiantes
 Content-Type: application/json
 
 {
-  "codigo": "EST-0001",
+  "codigo": "2026-010",
   "nombres": "Juan Carlos",
   "apellidos": "Pérez Gómez",
   "correo": "juan.perez@universidadxyz.edu",
@@ -22,7 +22,7 @@ PUT {{baseUrl}}/api/estudiantes/1
 Content-Type: application/json
 
 {
-  "codigo": "EST-0001",
+  "codigo": "2026-000",
   "nombres": "Juan Carlos",
   "apellidos": "Pérez Gómez",
   "correo": "juan.perez@universidadxyz.edu",
@@ -39,7 +39,7 @@ POST {{baseUrl}}/api/estudiantes
 Content-Type: application/json
 
 {
-  "codigo": "EST-2024-001",
+  "codigo": "2026-001",
   "nombres": "María Fernanda",
   "apellidos": "González Quispe",
   "correo": "maria.gonzalez@universidadxyz.edu",
@@ -51,7 +51,7 @@ POST {{baseUrl}}/api/estudiantes
 Content-Type: application/json
 
 {
-  "codigo": "EST-2024-002",
+  "codigo": "2026-002",
   "nombres": "Jorge Luis",
   "apellidos": "Mamani Condori",
   "correo": "jorge.mamani@universidadxyz.edu",
@@ -63,7 +63,7 @@ POST {{baseUrl}}/api/estudiantes
 Content-Type: application/json
 
 {
-  "codigo": "EST-2024-003",
+  "codigo": "2026-003",
   "nombres": "Valeria Andrea",
   "apellidos": "Vargas Huamán",
   "correo": "valeria.vargas@universidadxyz.edu",
@@ -75,9 +75,10 @@ POST {{baseUrl}}/api/estudiantes
 Content-Type: application/json
 
 {
-  "codigo": "EST-2024-004",
+  "codigo": "2026-004",
   "nombres": "Diego Alonso",
   "apellidos": "Choque Apaza",
   "correo": "diego.choque@universidadxyz.edu",
   "carrera": "Ingeniería de Software"
 }
+DELETE {{baseUrl}}/api/estudiantes/2
