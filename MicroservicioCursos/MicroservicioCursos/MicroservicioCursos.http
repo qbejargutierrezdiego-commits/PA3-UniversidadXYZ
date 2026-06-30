@@ -36,3 +36,39 @@ Content-Type: application/json
 
 ### Eliminar el curso con id 1
 DELETE {{baseUrl}}/api/cursos/2
+
+
+
+
+### Registrar curso 1
+POST {{baseUrl}}/api/cursos
+Content-Type: application/json
+
+{
+  "codigo": "INF101",
+  "nombre": "Introducción a la Programación",
+  "creditos": 4,
+  "docente": "Ing. Carlos Mendoza"
+}
+
+### Registrar curso 2
+POST {{baseUrl}}/api/cursos
+Content-Type: application/json
+
+{
+  "codigo": "BD201",
+  "nombre": "Bases de Datos",
+  "creditos": 4,
+  "docente": "Ing. Patricia Salas"
+}
+
+### Registrar curso 3
+POST {{baseUrl}}/api/cursos
+Content-Type: application/json
+
+{
+  "codigo": "SW305",
+  "nombre": "Ingeniería de Software",
+  "creditos": 5,
+  "docente": "Ing. Roberto Flores"
+}

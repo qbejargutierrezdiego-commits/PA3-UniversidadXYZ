@@ -31,3 +31,53 @@ Content-Type: application/json
 
 ### Eliminar el estudiante con id 1
 DELETE {{baseUrl}}/api/estudiantes/1
+
+
+
+### Registrar estudiante 1
+POST {{baseUrl}}/api/estudiantes
+Content-Type: application/json
+
+{
+  "codigo": "EST-2024-001",
+  "nombres": "María Fernanda",
+  "apellidos": "González Quispe",
+  "correo": "maria.gonzalez@universidadxyz.edu",
+  "carrera": "Ingeniería de Software"
+}
+
+### Registrar estudiante 2
+POST {{baseUrl}}/api/estudiantes
+Content-Type: application/json
+
+{
+  "codigo": "EST-2024-002",
+  "nombres": "Jorge Luis",
+  "apellidos": "Mamani Condori",
+  "correo": "jorge.mamani@universidadxyz.edu",
+  "carrera": "Ciencias de la Computación"
+}
+
+### Registrar estudiante 3
+POST {{baseUrl}}/api/estudiantes
+Content-Type: application/json
+
+{
+  "codigo": "EST-2024-003",
+  "nombres": "Valeria Andrea",
+  "apellidos": "Vargas Huamán",
+  "correo": "valeria.vargas@universidadxyz.edu",
+  "carrera": "Sistemas de Información"
+}
+
+### Registrar estudiante 4
+POST {{baseUrl}}/api/estudiantes
+Content-Type: application/json
+
+{
+  "codigo": "EST-2024-004",
+  "nombres": "Diego Alonso",
+  "apellidos": "Choque Apaza",
+  "correo": "diego.choque@universidadxyz.edu",
+  "carrera": "Ingeniería de Software"
+}
